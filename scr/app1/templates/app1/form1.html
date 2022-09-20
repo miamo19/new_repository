@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form1 test</title>
+</head>
+<body>
+  <form method="POST">
+    {% csrf_token %}
+    {{ student.as_p }}
+    <button type="submit" value="Save">save</button>
+  </form>
+</body>
+</html>
